@@ -1,0 +1,38 @@
+.
+├── LICENSE
+├── README.md
+├── app.py    # 主程序
+├── driver.py
+├── files.py
+├── launch.bat   # 启动脚本
+├── project_tree.txt
+├── static
+│   ├── css
+│   │   ├── download_error.css
+│   │   ├── download_error.min.css
+│   │   ├── index.css
+│   │   ├── index.min.css
+│   │   ├── login.css
+│   │   ├── login.min.css
+│   │   ├── upload.css
+│   │   └── upload.min.css
+│   ├── img
+│   │   └── body-background.jpg
+│   └── js
+│       ├── index.js
+│       ├── index.min.js
+│       ├── upload.js
+│       └── upload.min.js
+├── templates
+│   ├── download_error.html    # 请求文件错误返回页
+│   ├── download_error.min.html
+│   ├── index.html    # 主页
+│   ├── index.min.html
+│   ├── login.html    # 登录页
+│   ├── login.min.html
+│   ├── upload.html    # 上传文件页
+│   └── upload.min.html
+└── test_files
+    └── testURL.txt
+
+6 directories, 29 files
