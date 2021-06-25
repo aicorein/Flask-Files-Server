@@ -65,5 +65,5 @@ pip install flask
 >&emsp;&emsp;不同的程序要使用不同的密钥，而且要保证其他人不知道你所用的字符串，其主要作用应该是在各种加密过程中加盐以增加安全性。在实际应用中最好将这个参数存储为系统环境变量。
 
 &emsp;&emsp;&emsp;&emsp;建议通过随机方法获取值，采用系统变量方式存储，然后使用 `os.getenv('SECRET_KEY')` 读取<br><br>
-&emsp;&emsp;（3）定义登录用户名和密码：给 [app.py](https://github.com/AiCorein/Flask-Files-Server/blob/main/app.py) 中的 `SPECIFY_UNAME` `SPECIFY_UPWD` 常量赋值
+&emsp;&emsp;（3）定义登录用户名和密码：给 [app.py](https://github.com/AiCorein/Flask-Files-Server/blob/main/app.py) 中的 `SPECIFY_UNAME` `SPECIFY_UPWD` 常量赋值<br><br>
 &emsp;&emsp;（4）运行 [app.py](https://github.com/AiCorein/Flask-Files-Server/blob/main/app.py)
