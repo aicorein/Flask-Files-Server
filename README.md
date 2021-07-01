@@ -67,3 +67,6 @@ pip install flask
 &emsp;&emsp;&emsp;&emsp;建议通过随机方法获取值，采用系统变量方式存储，然后使用 `os.getenv('SECRET_KEY')` 读取<br><br>
 &emsp;&emsp;（3）定义登录用户名和密码：给 [app.py](https://github.com/AiCorein/Flask-Files-Server/blob/main/app.py) 中的 `SPECIFY_UNAME` `SPECIFY_UPWD` 常量赋值<br><br>
 &emsp;&emsp;（4）运行 [app.py](https://github.com/AiCorein/Flask-Files-Server/blob/main/app.py)
+
+## 六、演示
+[点击前往演示视频](https://www.bilibili.com/video/BV15K4y1g7Yo?share_source=copy_web)
