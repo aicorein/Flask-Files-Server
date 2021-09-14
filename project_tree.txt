@@ -1,38 +1,43 @@
 .
 ├── LICENSE
 ├── README.md
-├── app.py    # 主程序
+├── app.py	# 运行主程序
 ├── driver.py
 ├── files.py
-├── launch.bat   # 启动脚本
+├── launch.bat	# 启动脚本
 ├── project_tree.txt
 ├── static
 │   ├── css
+│   │   ├── h5	# h5文件夹为适配移动端的文件
+│   │   │   ├── m_download_error.css
+│   │   │   ├── m_index.css
+│   │   │   ├── m_login.css
+│   │   │   ├── m_upload.css
+│   │   │   └── normalize.css
 │   │   ├── download_error.css
-│   │   ├── download_error.min.css
 │   │   ├── index.css
-│   │   ├── index.min.css
 │   │   ├── login.css
-│   │   ├── login.min.css
-│   │   ├── upload.css
-│   │   └── upload.min.css
+│   │   └── upload.css
 │   ├── img
-│   │   └── body-background.jpg
+│   │   ├── body-background.jpg
+│   │   └── m_body-background.jpeg
 │   └── js
+│       ├── h5
+│       │   ├── m_index.js
+│       │   └── m_upload.js
 │       ├── index.js
-│       ├── index.min.js
-│       ├── upload.js
-│       └── upload.min.js
+│       └── upload.js
 ├── templates
-│   ├── download_error.html    # 请求文件错误返回页
-│   ├── download_error.min.html
-│   ├── index.html    # 主页
-│   ├── index.min.html
-│   ├── login.html    # 登录页
-│   ├── login.min.html
-│   ├── upload.html    # 上传文件页
-│   └── upload.min.html
+│   ├── h5
+│   │   ├── m_download_error.html
+│   │   ├── m_index.html
+│   │   ├── m_login.html
+│   │   └── m_upload.html
+│   ├── download_error.html
+│   ├── index.html
+│   ├── login.html
+│   └── upload.html
 └── test_files
     └── testURL.txt
 
-6 directories, 29 files
+9 directories, 52 files

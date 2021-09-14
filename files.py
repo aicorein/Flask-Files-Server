@@ -1,7 +1,6 @@
 from driver import get_winDriver
 import os
 import time
-import json
 
 
 DEFAULT_PATH = 'D:/'

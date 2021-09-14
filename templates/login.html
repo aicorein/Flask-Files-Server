@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>登录页面</title>
-  <link rel="stylesheet" href="../static/css/login.min.css">
+  <link rel="stylesheet" href="../static/css/login.min.css?t={{randomArg}}">
 </head>
 
 <body>
@@ -15,7 +18,7 @@
     <form action="/login" method="POST">
       <div class="account">
         <label for="uname">用户名</label>
-        <input type="text" placeholder="输入管理员用户名" name="uname" id="uname">
+        <input type="text" placeholder="输入管理员用户名" name="uname" id="uname" autofocus="autofocus">
       </div>
       <div class="pwd">
         <label for="upwd">密码</label>

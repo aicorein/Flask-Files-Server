@@ -15,7 +15,8 @@ html {
 
 body {
   background: url(../img/body-background.jpg) no-repeat;
-  background-size: 100% 115%;
+  /* background-size: 100% 115%; */
+  background-size: cover;
 }
 
 label {

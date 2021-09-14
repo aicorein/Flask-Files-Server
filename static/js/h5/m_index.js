@@ -1,24 +1,11 @@
 window.addEventListener('DOMContentLoaded', function () {
   // 两个浮动面板
   var flashTablet = document.querySelector('.flash-tablet');
-  var tableHeight = document.querySelector('.files-table').offsetTop;
-  var toTopBtn = document.querySelector('#to-top');
+  var driversContainer = document.querySelector('.drivers-container');
+  var contentPart = document.querySelector('.content');
 
-  window.addEventListener('scroll', function () {
-    if (window.pageYOffset > tableHeight) {
-      flashTablet.style.display = 'block';
-    }
-    else {
-      flashTablet.style.display = 'none';
-    }
-  })
-
-  toTopBtn.addEventListener('click', function () {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  })
+  flashTablet.style.height = driversContainer.offsetHeight + 'px';
+  contentPart.style.top = flashTablet.style.height;
 
   // 点击驱动器标号或点击文件夹触发更新
   var driverLinks = document.querySelectorAll('.drivers-container a');
@@ -49,17 +36,4 @@ window.addEventListener('DOMContentLoaded', function () {
       SubmitBtn.click();
     })
   }
-
-  // 判断当前路径，根目录下“返回上级”按钮要禁用
-  var tolastBtns = document.querySelectorAll('.to-lastPath');
-
-  if (curPathCons[0].innerHTML.length <= 3) {
-    for (let i = 0; i < tolastBtns.length; i++) {
-      tolastBtns[i].style.cssText = 'background-color: gray;' +
-        'background-image: linear-gradient(135deg, rgb(198 207 212) 0%, rgb(172, 173, 195) 100%);' +
-        'color: #747474;';
-      tolastBtns[i].disabled = 'disabled';
-    }
-  }
-  else { }
 })

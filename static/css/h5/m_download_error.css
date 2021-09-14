@@ -9,14 +9,21 @@ body {
   height: 100%;
 }
 
-html {
-  overflow-y: scroll;
-}
-
 body {
-  background: url(../img/body-background.jpg) no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../../img/m_body-background.jpeg) no-repeat fixed bottom center;
+  /* background-size: 100% 115%; */
   background-size: cover;
-  color: black;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 640px;
+  font-size: 16px;
+  font-family: -apple-system, Helvetica, sans-serif;
+  color: white;
+  line-height: 1.5;
+  text-align: center;
 }
 
 p {
@@ -24,8 +31,12 @@ p {
   font-weight: 700;
 }
 
-h1 {
+h2 {
   color: red;
+}
+
+h3 {
+  color: black;
 }
 
 h3:nth-child(2) {
@@ -38,24 +49,25 @@ span {
 
 .error-msg {
   overflow: hidden;
-  position: fixed;
   box-sizing: border-box;
-  top: 38%;
-  left: 7%;
-  transform: translateY(-30%);
-  width: 565px;
+  width: 100%;
   padding: 20px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, .3);
 }
 
+.btn-box {
+  display: flex;
+  justify-content: space-around;
+}
+
 button {
   display: inline-block;
-  width: 100px;
+  flex: 1;
   height: 35px;
   border: 0;
-  margin: 25px 0;
+  margin: 25px 8%;
   font-size: 18px;
   color: black;
   border-radius: 12px;

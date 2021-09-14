@@ -9,30 +9,25 @@ body {
   height: 100%;
 }
 
-html {
-  overflow-y: scroll;
-}
-
 body {
-  background: url(../img/body-background.jpg) no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../../img/m_body-background.jpeg) no-repeat fixed bottom center;
+  /* background-size: 100% 115%; */
   background-size: cover;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 640px;
+  font-size: 16px;
+  font-family: -apple-system, Helvetica, sans-serif;
   color: black;
+  line-height: 1.5;
+  text-align: center;
 }
 
-h1 {
-  position: absolute;
-  top: 21%;
-  left: 7%;
-  color: white;
-}
-
-h1::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  margin-top: 3px;
-  background-color: #66ccff;
+h3 {
+  font-size: 22px;
 }
 
 a {
@@ -43,28 +38,28 @@ a {
 
 .upload-tablet {
   overflow: hidden;
-  position: fixed;
   box-sizing: border-box;
-  top: 30%;
-  left: 7%;
-  width: 565px;
+  width: 100%;
   padding: 20px;
   border-radius: 15px;
+  text-align: center;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, .3);
 }
 
 .file {
   position: relative;
-  display: inline-block;
-  width: 90px;
-  height: 28px;
+  display: block;
+  overflow: hidden;
+  width: 50%;
+  height: 35px;
+  margin: 0 auto;
   font-size: 18px;
   color: black;
-  line-height: 28px;
+  line-height: 35px;
   text-align: center;
   background-color: #8BC6EC;
-  border-radius: 5px;
+  border-radius: 12px;
   background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .3);
 }
@@ -72,15 +67,15 @@ a {
 .file input {
   position: absolute;
   top: 0;
-  left: -90px;
-  width: 200%;
-  height: 100%;
+  left: -500px;
+  width: 1000%;
+  height: 35px;
   opacity: 0;
   cursor: pointer;
 }
 
 button {
-  display: inline-block;
+  display: block;
   width: 150px;
   height: 35px;
   border: 0;
@@ -93,13 +88,10 @@ button {
   cursor: pointer;
 }
 
-#displayInfo {
-  width: 108px;
-}
-
+#displayInfo,
 #submit {
-  width: 96px;
-  margin-left: 10px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .container {
@@ -142,9 +134,21 @@ button {
   background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 }
 
+input,
+button {
+  font-size: 18px;
+}
+
+.progress-bar {
+  font-size: 18px;
+}
+
+.btn-box {
+  margin-top: 40px;
+}
+
 .file,
 #displayInfo,
-.progress-bar,
 .back,
 #info {
   margin-top: 10px;
@@ -156,6 +160,20 @@ button {
 }
 
 #fileName {
-  margin-left: 15px;
+  display: block;
+  margin-top: 10px;
   font-size: 18px;
+}
+
+#submit {
+  margin-top: 16px;
+}
+
+#info {
+  text-align: left;
+}
+
+#info div,
+#info span {
+  padding-left: 20%;
 }

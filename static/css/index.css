@@ -15,7 +15,7 @@ html {
 
 body {
   background: url(../img/body-background.jpg) no-repeat fixed;
-  background-size: 100% 115%;
+  background-size: cover;
   color: white;
 }
 
@@ -133,8 +133,8 @@ a:visited {
 
 .float-tablet {
   position: fixed;
-  top: 75%;
-  left: 60%;
+  bottom: 40px;
+  right: 400px;
   width: 200px;
   height: 150px;
   border-radius: 15px;
@@ -178,8 +178,8 @@ a:visited {
   overflow: hidden;
   position: fixed;
   box-sizing: border-box;
-  top: 44%;
-  left: 60%;
+  bottom: 250px;
+  right: 40px;
   width: 560px;
   max-height: 226px;
   padding: 20px;

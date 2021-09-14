@@ -5,53 +5,58 @@
 ## 二、说明
 &emsp;&emsp;最开始是想着，实现电脑不在身边的时候直接访问、操作电脑文件。等到做完了才想起来用 ftp 协议配置也更方便，也更稳定；但既然都做完了(；′⌒`)...也就权当一个练手项目吧。<br>
 &emsp;&emsp;使用 http 实现确实麻烦了，但正好也能用最近学的前端知识做一做交互界面。使用 Windows 自带的 ftp 服务或网上的其他 ftp 客户端 UI 也就那样，自己从零设计 ftp 服务客户端又太麻烦了，选择前端 http 实现正好可以满足 UI 这个需求。<br>
-&emsp;&emsp;同时不同设备访问只需要浏览器就可以了，当然移动端体验可能不太好，因为我没做移动端网页（懒），但是用还是能用的...
+&emsp;&emsp;同时不同设备访问只需要浏览器就可以了。~~当然移动端体验可能不太好，因为我没做移动端网页（懒），但是用还是能用的...~~ （2021.09.15 更新了移动端适配，移动端使用体验大幅提升）
 
 ## 三、功能
 &emsp;&emsp;（1）~~炫酷、人性化使用界面，赏心悦目（划掉）~~<br><br>
 &emsp;&emsp;（2）类似 ftp 服务的文件访问、下载和上传功能，没有删除（没这个需求）
 
 ## 四、项目结构
-&emsp;&emsp;提示：（为提高运行速度html、css 和 js 文件有压缩）
+&emsp;&emsp;提示：（为提高运行速度html、css 和 js 文件有压缩，压缩后的文件与原文件在同一目录下。在以下树中未显示。）
 ```txt
 .
 ├── LICENSE
 ├── README.md
-├── app.py    # 主程序
+├── app.py	# 运行主程序
 ├── driver.py
 ├── files.py
-├── launch.bat   # 启动脚本
+├── launch.bat	# 启动脚本
 ├── project_tree.txt
 ├── static
 │   ├── css
+│   │   ├── h5	# h5文件夹为适配移动端的文件
+│   │   │   ├── m_download_error.css
+│   │   │   ├── m_index.css
+│   │   │   ├── m_login.css
+│   │   │   ├── m_upload.css
+│   │   │   └── normalize.css
 │   │   ├── download_error.css
-│   │   ├── download_error.min.css
 │   │   ├── index.css
-│   │   ├── index.min.css
 │   │   ├── login.css
-│   │   ├── login.min.css
-│   │   ├── upload.css
-│   │   └── upload.min.css
+│   │   └── upload.css
 │   ├── img
-│   │   └── body-background.jpg
+│   │   ├── body-background.jpg
+│   │   └── m_body-background.jpeg
 │   └── js
+│       ├── h5
+│       │   ├── m_index.js
+│       │   └── m_upload.js
 │       ├── index.js
-│       ├── index.min.js
-│       ├── upload.js
-│       └── upload.min.js
+│       └── upload.js
 ├── templates
-│   ├── download_error.html    # 请求文件错误返回页
-│   ├── download_error.min.html
-│   ├── index.html    # 主页
-│   ├── index.min.html
-│   ├── login.html    # 登录页
-│   ├── login.min.html
-│   ├── upload.html    # 上传文件页
-│   └── upload.min.html
+│   ├── h5
+│   │   ├── m_download_error.html
+│   │   ├── m_index.html
+│   │   ├── m_login.html
+│   │   └── m_upload.html
+│   ├── download_error.html
+│   ├── index.html
+│   ├── login.html
+│   └── upload.html
 └── test_files
     └── testURL.txt
 
-6 directories, 29 files
+9 directories, 52 files
 
 ```
 
