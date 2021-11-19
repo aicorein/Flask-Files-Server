@@ -14,7 +14,7 @@ app = Flask(__name__, template_folder='templates', static_folder='static', \
 # 这里是预先将值存储在系统环境变量中了
 app.secret_key = os.getenv('SECRET_KEY')
 # 匹配移动端设备的正则表达式
-MATCH_EXP = 'Android|webOS|iPhone|iPod|BlackBerry'
+MATCH_EXP = 'Android|webOS|iPhone|iPad|iPod|BlackBerry'
 # 设置登录用户名和密码
 SPECIFY_UNAME = ''
 SPECIFY_UPWD = ''
