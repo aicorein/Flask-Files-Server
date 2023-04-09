@@ -11,56 +11,7 @@
 &emsp;&emsp;（1）~~炫酷、人性化使用界面，赏心悦目（划掉）~~<br><br>
 &emsp;&emsp;（2）类似 ftp 服务的文件访问、下载和上传功能，没有删除（没这个需求）
 
-## 四、项目结构
-&emsp;&emsp;提示：（为提高运行速度html、css 和 js 文件有压缩，压缩后的文件与原文件在同一目录下。在以下树中未显示。）
-```txt
-.
-├── LICENSE
-├── README.md
-├── app.py	# 运行主程序
-├── driver.py
-├── files.py
-├── launch.bat	# 启动脚本
-├── project_tree.txt
-├── static
-│   ├── css
-│   │   ├── h5	# h5文件夹为适配移动端的文件
-│   │   │   ├── m_download_error.css
-│   │   │   ├── m_index.css
-│   │   │   ├── m_login.css
-│   │   │   ├── m_upload.css
-│   │   │   └── normalize.css
-│   │   ├── download_error.css
-│   │   ├── index.css
-│   │   ├── login.css
-│   │   └── upload.css
-│   ├── img
-│   │   ├── body-background.jpg
-│   │   └── m_body-background.jpeg
-│   └── js
-│       ├── h5
-│       │   ├── m_index.js
-│       │   └── m_upload.js
-│       ├── index.js
-│       └── upload.js
-├── templates
-│   ├── h5
-│   │   ├── m_download_error.html
-│   │   ├── m_index.html
-│   │   ├── m_login.html
-│   │   └── m_upload.html
-│   ├── download_error.html
-│   ├── index.html
-│   ├── login.html
-│   └── upload.html
-└── test_files
-    └── testURL.txt
-
-9 directories, 52 files
-
-```
-
-## 五、使用
+## 四、使用
 &emsp;&emsp;（1）安装依赖：
 ```cmd
 pip install flask
@@ -73,5 +24,5 @@ pip install flask
 &emsp;&emsp;（3）定义登录用户名和密码：给 [app.py](https://github.com/AiCorein/Flask-Files-Server/blob/main/app.py) 中的 `SPECIFY_UNAME` `SPECIFY_UPWD` 常量赋值<br><br>
 &emsp;&emsp;（4）运行 [app.py](https://github.com/AiCorein/Flask-Files-Server/blob/main/app.py)
 
-## 六、演示
+## 五、演示
 [点击前往演示视频](https://www.bilibili.com/video/BV15K4y1g7Yo?share_source=copy_web)
